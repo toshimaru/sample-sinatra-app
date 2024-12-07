@@ -19,3 +19,8 @@ end
 get '/hello/:name' do |n|
   "Hello #{n}!"
 end
+
+get '/slow' do
+  sleep 5
+  'slow response'
+end
